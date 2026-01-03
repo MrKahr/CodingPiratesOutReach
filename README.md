@@ -1,5 +1,5 @@
 # CodingPiratesOutReach
-Materials created as part of recruitment drive started by myself for Coding Pirates GameDe GameDev. 
+Materials created as part of recruitment drive started by myself for Coding Pirates GameDev. 
 
 ## Necessary background 
 This is a beamer presentation, which is written in the LaTeX markup language (For more details on LaTeX, see https://www.latex-project.org/). 
@@ -18,9 +18,11 @@ I provide a brief description of each.
 3) main.tex - source file that combines files necessary to generate (compile and output) the presentation.  
 
 ## How to generate a presentation (invoking the compiler) 
-To generate a presentation, we can invoke the pdf-LaTeX compiler using this command: 
+To generate a presentation, you can invoke the pdf-LaTeX compiler using this command: 
 ```
-pdflatex ./main.tex 
+pdflatex main 
+bibtex main 
+pdflatex main 
 ```
 ## Version 
 This project was compiled using pdfTeX Version 3.141592653-2.6-1.40.24
