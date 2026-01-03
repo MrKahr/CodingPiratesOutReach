@@ -1,0 +1,8 @@
+#!/bin/bash
+# Settings 
+path=pwd
+file=main.tex
+
+#chmod x  && chmod u+r "$file" 
+
+#pdflatex "$file" 
