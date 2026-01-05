@@ -1,13 +1,8 @@
 #!/bin/bash
 # Settings 
-path=pwd
 file=main
-
+ 
 pdflatex "$file"
 bibtex "$file"
 pdflatex "$file"
-pdflatex "$file"
 
-#chmod x  && chmod u+r "$file" 
-
-#pdflatex "$file" 

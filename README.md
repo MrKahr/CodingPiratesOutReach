@@ -18,12 +18,14 @@ I provide a brief description of each.
 3) main.tex - source file that combines files necessary to generate (compile and output) the presentation.  
 
 ## How to generate a presentation (invoking the compiler) 
-To generate a presentation, you can invoke the pdf-LaTeX compiler using this command: 
+To generate a presentation, you can invoke the pdf-LaTeX compiler using these commands: 
 ```
 pdflatex main 
 bibtex main 
 pdflatex main 
 ```
+Alternatively, you can use build scripts for [[UNIX](./autocompile_UNIX)] or [[WINDOWS](./autocompile_WINDOWS.bat)] 
+
 ## Version 
 This project was compiled using pdfTeX Version 3.141592653-2.6-1.40.24
 
