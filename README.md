@@ -7,6 +7,7 @@ This is a beamer presentation, which is written in the LaTeX markup language (Fo
 Beamer is a LaTeX document class that is useful for creating presentations. 
 
 Note that LaTeX is flexible enough to produce technical reports, scientific publications, and books - not just presentations!. 
+
 ## Project Structure
 To make the project more human-readable, I've attempted to create a logical project structure. 
 
@@ -18,15 +19,18 @@ I provide a brief description of each.
 3) main.tex - source file that combines files necessary to generate (compile and output) the presentation.  
 
 ## How to generate a presentation (invoking the compiler) 
-To generate a presentation, you can invoke the pdf-LaTeX compiler using these commands: 
+To generate a presentation, you can select whichever compiler you prefer. 
+
+This document has been compiled using the pdf-LaTeX compiler invoked with these commands: 
 ```
 pdflatex main 
 bibtex main 
 pdflatex main 
 ```
-Alternatively, I've provided build scripts for [[UNIX](./autocompile_UNIX)] or [[WINDOWS](./autocompile_WINDOWS.bat)] 
 
-## Version 
+Alternatively, I've provided build scripts for [[LINUX](./autocompile_UNIX)] or [[WINDOWS](./autocompile_WINDOWS.bat)] 
+
+## Engine Version 
 This project was compiled using pdfTeX Version 3.141592653-2.6-1.40.24
 
 ## Helpful resources
@@ -36,6 +40,9 @@ If you want to modify this template, here are some useful resources:
 
 - [Beamer user guide (esp chap 8+)](https://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf)
 
+- [Very popular graph library - Tikz](https://tikz.dev/tikz-graphs)
+
 ## Feature ideas 
 - Static images and hyperlinks replaced by embedded video 
-- autocompile scripts are tested and have error handling  
+- Autocompile scripts are tested and have error handling  
+- Rewrite most macros in TeX to ensure greater control over formatting 
