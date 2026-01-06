@@ -24,10 +24,17 @@ pdflatex main
 bibtex main 
 pdflatex main 
 ```
-Alternatively, you can use build scripts for [[UNIX](./autocompile_UNIX)] or [[WINDOWS](./autocompile_WINDOWS.bat)] 
+Alternatively, I've provided build scripts for [[UNIX](./autocompile_UNIX)] or [[WINDOWS](./autocompile_WINDOWS.bat)] 
 
 ## Version 
 This project was compiled using pdfTeX Version 3.141592653-2.6-1.40.24
+
+## Helpful resources
+If you want to modify this template, here are some useful resources: 
+
+- [Patrizio Sommatinese's presentation on youtube](https://www.youtube.com/watch?v=XUrALacyO1Y)
+
+- [Beamer user guide (esp chap 8+)](https://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf)
 
 ## Feature ideas 
 - Static images and hyperlinks replaced by embedded video 
