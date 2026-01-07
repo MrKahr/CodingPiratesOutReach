@@ -1,18 +1,18 @@
 \section{Hvordan det er at være med i Coding Pirates}
 \begin{frame}
 \frametitle{Hvad laver vi? (i GameDev)}
-    \newcommand{\nodenames}{
+    \newcommand{\gamedevconcepts}{
         Engine, Logik, Assets, Design, Historiefortælling, Samarbejde
     }
     \begin{center}
     \begin{tikzpicture}
         % Draw boxes (Vertices/Nodes)
-        \foreach [count=\i] \x in \nodenames{
+        \foreach [count=\i] \x in \gamedevconcepts{
             \node (\x) at(\i*60:10em) {\x};
         }
         % Draw box connects (Edges) 
-        \foreach \x in \nodenames{
-            \foreach \y in \nodenames{
+        \foreach \x in \gamedevconcepts{
+            \foreach \y in \gamedevconcepts{
                 \ifx\x\y
                     % Don't create loop on every node 
                 \else
@@ -26,19 +26,27 @@
 
 \begin{frame}
 \frametitle{Hvordan kan man være med?}
-    \begin{tikzpicture}
-        Lad x være dig!
-        \graph[branch down=5em]{
-            A[at={(0,0)}, as={RigtigAlder(x) = $x>=12$år OG $x<= 17$år}];
-            B[at={(0,1)}, as={InteresseretIComputerSpil(x)}];
-            C[at={(0,2)}, as={FriOnsdagAften(x)}];
-            D[at={(0,3)}, as={ErNysgerrigPåSoftware(x)}];
-            E[at={(0,4)}, as={KanTilmeldeDig(x) = Har500kr(x) OG KanFindeCodingPirates.dk(x)}];
-            F[at={(0,9)},as={VilNogetAndet(x)}];
+    \newcommand{\applicationpredicates}{
+        RigtigAlder(x) = $x>=12$år OG $x<= 17$år, 
+        InteresseretIComputerSpil(x),
+        FriOnsdagAften(x),
+        ErNysgerrigPåSoftware(x), 
+        KanTilmeldeDig(x) = Har500kr(x) OG KanFindeCodingPirates.dk(x), 
+        MedlemAfPiraterne(x),
+        VilNogetAndet(x)
+    }
 
-            {A,B,C,D,E} -> F;
-        };
-    \end{tikzpicture}
+    Lad x være dig!
+    \begin{center}
+        \begin{tikzpicture}
+            \foreach [count=\i] \x in \applicationpredicates{
+                \draw(\x) at (0,\i)
+            }
+            \foreach [count=\j] \y in \applicationpredicates{
+                \node(\y)
+            }
+        \end{tikzpicture}
+    \end{center}
 \end{frame}
 
 \begin{frame}
