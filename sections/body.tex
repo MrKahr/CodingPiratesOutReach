@@ -1,46 +1,48 @@
 \section{Hvordan det er at være med i Coding Pirates}
 \begin{frame}
 \frametitle{Hvad laver vi? (i GameDev)}
+    \newcommand{\nodenames}{
+        Engine, Logik, Assets, Design, Historiefortælling, Samarbejde
+    }
     \begin{center}
     \begin{tikzpicture}
-        % procedure/command not placed in preamble because it is only used here!
-        \newcommand{\nodenames}{
-            {Engine, Logik, Assets, Design, Historiefortælling}
+        % Draw boxes (Vertices/Nodes)
+        \foreach [count=\i] \x in \nodenames{
+            \node (\x) at(\i*60:10em) {\x};
         }
-        % I gave up on writing imperative TeX, screw it - we're going declarative babeee! 
-        \graph[
-            circular placement, 
-            radius=6em,
-            edges={draw, <->, shorten >=1pt}, 
-            nodes={draw, align=center, rounded corners, minimum width=4em}
-            ]
-            {Engine, Logik, Assets, Design, Historiefortælling -> {Engine, Logik, Assets, Design, Historiefortælling}};    
+        % Draw box connects (Edges) 
+        \foreach \x in \nodenames{
+            \foreach \y in \nodenames{
+                \ifx\x\y
+                    % Don't create loop on every node 
+                \else
+                    \draw (\x) -> (\y);
+                \fi
+            }
+        }
     \end{tikzpicture}
     \end{center}
-        % \begin{itemize}
-        % \item Spiludvikling i Unity, GameMaker eller MakeyMake 
-        % \item Skriver spillogik - hvor højt skal man kunne hoppe, skal der være et dobbelthop?
-        % \item Laver assets - hvordan skal spilfiguren se ud? Hvem skal dens fjender være? Har vi et tema?
-        % \item Design - Hvordan skal et level se ud? Hvilke værktøjer skal en spiller have adgang til og hvorfor?
-        % \item Historiefortælling - Hvordan skal vores karakterer være? Hvad fik dem til at være starte eventyret? 
-        % \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Hvordan kan man være med?}
-    % \begin{itemize}
-    %     \item Vær mellem 12-17 år gammel 
-    %     \item Tilmelding på vores hjemmeside\cite{Pirates_tilmeld}
-    %     \item 500kr per sæson (cirka 4 måneder)
-    %     \item Ligesom at gå til musik eller sport - en gang om ugen af cirka 2 timer
-    %     \item Du vælger et projekt du gerne vil lave eller du får en lille opgave, du kan være kreativ med!
-    %     \item Frivillige hjælper med at bygge, hvis du sidder fast - men det er dig, der skal bygge!
-    %     \item Forældre kommer en gang imellem og kigger på projekter, men det er et tilbud til jer!
-    % \end{itemize}
+    \begin{tikzpicture}
+        Lad x være dig!
+        \graph[branch down=5em]{
+            A[at={(0,0)}, as={RigtigAlder(x) = $x>=12$år OG $x<= 17$år}];
+            B[at={(0,1)}, as={InteresseretIComputerSpil(x)}];
+            C[at={(0,2)}, as={FriOnsdagAften(x)}];
+            D[at={(0,3)}, as={ErNysgerrigPåSoftware(x)}];
+            E[at={(0,4)}, as={KanTilmeldeDig(x) = Har500kr(x) OG KanFindeCodingPirates.dk(x)}];
+            F[at={(0,9)},as={VilNogetAndet(x)}];
+
+            {A,B,C,D,E} -> F;
+        };
+    \end{tikzpicture}
 \end{frame}
 
 \begin{frame}
-\frametitle{Demo}
+\frametitle{Demo og hvordan en game engine ser ud!}
 Et produkt fra gamedevafdelingen, som man kan finde på steam!
 \begin{figure}
     \href{https://store.steampowered.com/app/1589450/Frogiee/}{\includegraphics[width=\textwidth, keepaspectratio]{/home/madshebsgaard/Projects/CodingPiratesOutReach/assets/pictures/Frogiee_1920x1080.jpg}}
