@@ -1,0 +1,34 @@
+%%% What the document looks like (the beamer theme)
+\setbeamercolor{testcolor}{bg=pirat_blaa, fg=white} 
+
+% Set the behaviour of default elements
+\setbeamertemplate{headline}{
+    \begin{beamercolorbox}[ht=3.5em, wd=\textwidth]{testcolor}
+        \hfill
+        \includegraphics[width=3.5em]{assets/pictures/piratesLogo.png}
+    \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}{
+    \begin{beamercolorbox}[ht=1.5em,wd=\textwidth]{testcolor}
+        \hspace{1em}
+        \insertauthor
+        \hfill
+        \inserttitle
+        \hfill
+        \insertdate
+        \hspace{1em}
+    \end{beamercolorbox} 
+}
+
+% TODO: center title
+%\setbeamertemplate{frametitle}{
+%
+%}
+
+% TODO: create alternating cap icon items
+% INSERT VARIABLE COUNTER HERE!
+%\newcommand{\pirateitem}[3][]{
+%    \item
+%}
+ 

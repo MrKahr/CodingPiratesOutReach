@@ -1,0 +1,23 @@
+%%% NOTE: This library is meant for developers, if you are not a developer and it doesn't make sense, you shouldn't worry!
+%%% ALSO, I been liberal with comments since this is a learning project
+% - Remember \relax = noOP
+
+%%% Helpful tex macros 
+% Token counter 
+\newcount\tokencount % global across recursive calls (dangerous, but at least all calls have access to it)
+
+\def\counttokens#1{
+    % Def and initialize 
+    \tokencount=0;
+    % Recursive call that counts one token at a time
+    \counttokensaux#1;
+}
+
+\def\counttokensaux#1{
+    \ifx\#1\relax % noop, end of the token stream - base case
+    \else
+        \advance \tokencount by 1;
+        \let\next=\counttokensaux#1; % create a subproblem for each character recursively
+    \fi
+    \next;
+}
