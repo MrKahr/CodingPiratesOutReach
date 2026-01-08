@@ -42,7 +42,12 @@ If you want to modify this template, here are some useful resources:
 
 - [Very popular graph library - Tikz](https://tikz.dev/tikz-graphs)
 
-## Feature ideas 
+- [A quick-reference for TeX-basics from Brown University](https://www.math.brown.edu/johsilve/ReferenceCards/TeXRefCard.v1.5.pdf)
+
+## Features ideas 
 - Static images and hyperlinks replaced by embedded video 
 - Autocompile scripts are tested and have error handling  
-- Rewrite most macros in TeX to ensure greater control over formatting 
+
+## TODOS:
+- Create item command that alternates captain pictures of types 1 and 2
+- Finish token counter macro
