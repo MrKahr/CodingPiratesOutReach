@@ -51,3 +51,4 @@ If you want to modify this template, here are some useful resources:
 ## TODOS:
 - Create item command that alternates captain pictures of types 1 and 2
 - Finish token counter macro
+- Finish build script for linux
