@@ -28,7 +28,7 @@ bibtex main
 pdflatex main 
 ```
 
-Alternatively, I've provided build scripts for [[LINUX](./autocompile_UNIX)]
+Alternatively, I've provided build scripts for [[LINUX](./autocompile_LINUX)]
 
 ## Engine Version 
 This project was compiled using pdfTeX Version 3.141592653-2.6-1.40.24
