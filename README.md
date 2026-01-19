@@ -1,6 +1,11 @@
 # CodingPiratesOutReach
 Materials created as part of recruitment drive started by myself for Coding Pirates GameDev. 
 
+## IMPORTANT 
+This project is written as a demo for audience that is more general than developers, computer scientists, and mathematicians.
+
+Though I have main tried to statisfy this group, I have attempted to use correct terminology where possible.
+
 ## Necessary background 
 This is a beamer presentation, which is written in the LaTeX markup language (For more details on LaTeX, see https://www.latex-project.org/). 
 
@@ -11,12 +16,12 @@ Note that LaTeX is flexible enough to produce technical reports, scientific publ
 ## Project Structure
 To make the project more human-readable, I've attempted to create a logical project structure. 
 
-I provide a brief description of each. 
+I provide a brief description of each folder. 
 
 0) assets - media elements embedded in the presentation e.g. images or videos. 
 1) preamble - the LaTeX and custom commands needed to specify the style, and structure of the presentation. 
 2) bibliograph - the sources used in the presentation. 
-3) main.tex - source file that combines files necessary to generate (compile and output) the presentation.  
+3) main.tex - source file that combines files necessary to generate (compile PDF) the presentation.  
 
 ## How to generate a presentation (invoking the compiler) 
 To generate a presentation, you can select whichever compiler you prefer. 
@@ -28,7 +33,7 @@ bibtex main
 pdflatex main 
 ```
 
-Alternatively, I've provided build scripts for [[LINUX](./autocompile_UNIX)]
+Alternatively, I've provided build scripts for [[LINUX](./autocompile_LINUX)]
 
 ## Engine Version 
 This project was compiled using pdfTeX Version 3.141592653-2.6-1.40.24
@@ -44,11 +49,10 @@ If you want to modify this template, here are some useful resources:
 
 - [A quick-reference for TeX-basics from Brown University](https://www.math.brown.edu/johsilve/ReferenceCards/TeXRefCard.v1.5.pdf)
 
-## Features ideas 
+## Feature ideas 
 - Static images and hyperlinks replaced by embedded video 
 - Autocompile scripts are tested and have error handling  
 
 ## TODOS:
 - Create item command that alternates captain pictures of types 1 and 2
 - Finish token counter macro
-- Finish build script for linux
