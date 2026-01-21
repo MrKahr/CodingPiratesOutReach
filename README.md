@@ -4,7 +4,7 @@ Materials created as part of recruitment drive started by myself for Coding Pira
 ## IMPORTANT 
 This project is written as a demo for audience that is more general than developers, computer scientists, and mathematicians.
 
-Though I have main tried to statisfy this group, I have attempted to use correct terminology where possible.
+Though I have mainly tried to statisfy this group, I have attempted to use correct terminology where possible.
 
 ## Necessary background 
 This is a beamer presentation, which is written in the LaTeX markup language (For more details on LaTeX, see https://www.latex-project.org/). 
